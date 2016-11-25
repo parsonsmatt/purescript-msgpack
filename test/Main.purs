@@ -28,7 +28,6 @@ main = run [consoleReporter] do
                     ===
                     (runExcept $ pure value)
 
-
 newtype TestVal = TestVal { foo :: String, bar :: Int }
 
 derive instance genericTestVal :: Generic TestVal
