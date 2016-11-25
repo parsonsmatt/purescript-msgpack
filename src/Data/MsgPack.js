@@ -9,7 +9,7 @@ exports.encode = function(x) {
 
 exports.decodeImpl = function(left, right, buffer) {
     try {
-        return right(msgpack.decode(buffer)) 
+        return right(msgpack.decode(buffer));
     } catch (e) {
         return left(String(JSON.stringify(e))); 
     }
